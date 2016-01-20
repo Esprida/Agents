@@ -2,8 +2,8 @@
 Created on 2015-12-16
 @author: AShajrawi
 
-This is an agent code that registers the agent/remote device/thing as a root asset on the LiveControl server.
-It sends the registration data in a JSONan with an HTTP POST to the server (hardcoded).
+This is an agent code that registers the agent/remote device/thing as an root asset on the LiveControl server.
+It sends the registration data in a JSON with an HTTP POST to the server (hardcoded).
 
 Refer to http://docs.esprida.com/pages/viewpage.action?title=API+Reference&spaceKey=PR#APIReference-
 
