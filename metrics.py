@@ -2,8 +2,8 @@
 Created on 2015-12-16
 @author: AShajrawi
 
-This code simulates the AssetMetric part of the Agent API. it sends "POST" to the bachchan server 
-hardcoded data in a JSON to test the connectiom and the JASON contents.
+This code simulates the AssetMetric part of the Agent API. it sends the metric data in a JSON with an HTTP POST
+to the LiveControl server (hardcoded)
 
 Refer to http://docs.esprida.com/pages/viewpage.action?title=API+Reference&spaceKey=PR#APIReference-Agent:AssetMetric
 
