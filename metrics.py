@@ -21,11 +21,11 @@ AssetMetric_Data = [
         "values":[
             {
                     "metricValue": "21",
-                    "detectionTime":"2016-01-20T18:46:32Z"
+                    "detectionTime":"2017-01-20T18:46:32Z"
             },
             {
                     "metricValue": "24",
-                    "detectionTime":"2016-01-20T18:46:32Z"
+                    "detectionTime":"2017-01-20T18:46:32Z"
             }
         ]
     },
@@ -34,7 +34,7 @@ AssetMetric_Data = [
         "values":[
             {
                     "metricValue": "30",
-                    "detectionTime":"2016-01-20T18:46:32Z"
+                    "detectionTime":"2017-01-20T18:46:32Z"
             }
         ]
     }
@@ -46,6 +46,13 @@ headers = {'content-type': 'application/json', 'Authorization': "Basic MzRiNjNkY
 req = urllib2.Request(url,data = json.dumps(AssetMetric_Data), headers = headers)
 response = urllib2.urlopen(req)
 print response.read()
+if response.status_code == "200":
+    print("metrics successfully delivered.")
+else:
+    print("Error sending metrics")
+    print response.status_code
+    print response.text
+    
 response.close()
 
    
