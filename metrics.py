@@ -1,14 +1,12 @@
 """
 Created on 2015-12-16
-@author: AShajrawi
+@author: Asma Shajrawi - Esprida
 
-This code simulates the AssetMetric part of the Agent API. it sends the metric data in a JSON with an HTTP POST
-to the LiveControl server (hardcoded)
+This code sends metric data in a JSON with an HTTP POST to the LiveIntersect server (hardcoded)
 
-Refer to http://docs.esprida.com/pages/viewpage.action?title=API+Reference&spaceKey=PR#APIReference-Agent:AssetMetric
+Refer to Developer Guide> Endpoint API Entities> Asset Registration > Asset Metrics under the Help Section on your of you LiveIntersect's 
+Admisniatrtion dashboard 
 
-This code create or update metrics associated with an asset.  
-A JSON object is passed to the server as part of the request.
 """
 
 import urllib2, json
@@ -41,7 +39,7 @@ AssetMetric_Data = [
 ]
 # POST with JSON 
 
-url = 'http://demo8.esprida.com/agentapi/assetmetrics'
+url = 'http://sandbox.liveintersect.com.com/agentapi/assetmetrics'
 headers = {'content-type': 'application/json', 'Authorization': "Basic MzRiNjNkYmMtZWIzZS00MTAxLTgzM2QtYmE4MjAzNWRjOGEzOg=="} #This is general/default
 req = urllib2.Request(url,data = json.dumps(AssetMetric_Data), headers = headers)
 response = urllib2.urlopen(req)
