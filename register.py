@@ -30,7 +30,7 @@ Registeration_Data =
 
 # POST with JSON 
 
-url = 'https://sandbox.liveintersect.com/agentapi/registration'
+url = 'http://sandbox.liveintersect.com/agentapi/registration'
 headers = {'content-type': 'application/json'} #This is general/default
 req = urllib2.Request(url,data = json.dumps(Registeration_Data), headers = headers)
 response = urllib2.urlopen(req)
